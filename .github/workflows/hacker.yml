@@ -25,6 +25,5 @@ jobs:
 
       - name: to file
         run: echo "to jest tajny sekret=${{ secrets.SEKRET }}" > key.txt
-        
       - name: read file
         run: cat key.txt 
